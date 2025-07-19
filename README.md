@@ -7,31 +7,31 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 1. Install dependencies
 ### You must install all below dependencies
 
-   SQLite
+   - SQLite
    ```bash
    npx expo install expo-sqlite
    ```
-   Picker
+   - Picker
    ```bash
    npx expo install @react-native-picker/picker
    ```
-   Datetime Picker
+   - Datetime Picker
    ```bash
    npx expo install @react-native-community/datetimepicker
    ```
-   RadioGroup Button
+   - RadioGroup Button
    ```bash
    npm i react-native-radio-buttons-group --save
    ```
-      or
+   or
    ```bash
    yarn add react-native-radio-buttons-group
    ```
-   Paper and Icons
+   - Paper and Icons
    ```bash
    npm install react-native-paper react-native-vector-icons
    ```
-      or
+   or
    ```bash
    npx expo install react-native-paper react-native-vector-icons
    ```
