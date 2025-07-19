@@ -3,7 +3,7 @@ import { Tabs } from 'expo-router';
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: '#4f2981ff' }}>
       <Tabs.Screen
         name="index"
         options={{
@@ -11,11 +11,12 @@ export default function TabLayout() {
         headerShown: true, // pastikan header ditampilkan
         headerTitleAlign: 'center', // contoh: header di tengah
         headerStyle: {
-          backgroundColor: '#f8f9fa', // ubah warna background header
+          backgroundColor: '#4f2981ff', // ubah warna background header
         },
         headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: 20,
+          fontWeight: 'bold',
+          fontSize: 20,
+          color:  '#ffffff',
         },
           tabBarIcon: ({ color }) => <FontAwesome size={24} name="home" color={color} />
         }}
@@ -28,13 +29,14 @@ export default function TabLayout() {
         headerShown: true, // pastikan header ditampilkan
         headerTitleAlign: 'center', // contoh: header di tengah
         headerStyle: {
-          backgroundColor: '#f8f9fa', // ubah warna background header
+          backgroundColor: '#4f2981ff', // ubah warna background header
         },
         headerTitleStyle: {
-        fontWeight: 'bold',
-        fontSize: 20,
+          fontWeight: 'bold',
+          fontSize: 20,
+          color: '#ffffff',
         },
-          tabBarIcon: ({ color }) => <FontAwesome name="user-circle" size={24} color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome name="user-circle" size={21} color={color} />,
         }}
       />
     </Tabs>

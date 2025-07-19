@@ -21,7 +21,7 @@ type DbType = SQLite.SQLiteDatabase;
 export default function Home() {
   const [db, setDb] = useState<DbType | null>(null);
   const [name, setName] = useState("");
-  const [gender, setGender] = useState("L");
+  const [gender, setGender] = useState("Laki-laki");
   const [selectedGenderId, setSelectedGenderId] = useState("L");
   const [birthPlace, setBirthPlace] = useState("");
   const [birthDate, setBirthDate] = useState(new Date());
@@ -34,7 +34,7 @@ export default function Home() {
       {
         id: "L",
         label: "Laki-laki",
-        value: "L",
+        value: "Laki-laki",
         color: "#007AFF",
         labelStyle: { fontSize: 16 },
         containerStyle: { marginRight: 20 },
@@ -42,7 +42,7 @@ export default function Home() {
       {
         id: "P",
         label: "Perempuan",
-        value: "P",
+        value: "Perempuan",
         color: "#007AFF",
         labelStyle: { fontSize: 16 },
       },
@@ -74,7 +74,7 @@ export default function Home() {
 
   const clearForm = () => {
     setName("");
-    setGender("L");
+    setGender("Laki-laki");
     setSelectedGenderId("L");
     setBirthPlace("");
     setBirthDate(new Date());
