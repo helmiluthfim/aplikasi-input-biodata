@@ -7,15 +7,34 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+        title: 'Home',
+        headerShown: true, // pastikan header ditampilkan
+        headerTitleAlign: 'center', // contoh: header di tengah
+        headerStyle: {
+          backgroundColor: '#f8f9fa', // ubah warna background header
+        },
+        headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        },
+          tabBarIcon: ({ color }) => <FontAwesome size={24} name="home" color={color} />
         }}
       />
+
       <Tabs.Screen
-        name="settings"
+        name="data"
         options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+        title: 'Data Biodata',
+        headerShown: true, // pastikan header ditampilkan
+        headerTitleAlign: 'center', // contoh: header di tengah
+        headerStyle: {
+          backgroundColor: '#f8f9fa', // ubah warna background header
+        },
+        headerTitleStyle: {
+        fontWeight: 'bold',
+        fontSize: 20,
+        },
+          tabBarIcon: ({ color }) => <FontAwesome name="user-circle" size={24} color={color} />,
         }}
       />
     </Tabs>

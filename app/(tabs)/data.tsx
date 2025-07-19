@@ -23,7 +23,7 @@ interface BiodataRecord {
 
 type DbType = SQLite.SQLiteDatabase;
 
-export default function Settings() {
+export default function Data() {
   const [db, setDb] = useState<DbType | null>(null);
   const [biodataList, setBiodataList] = useState<BiodataRecord[]>([]);
   const [editingId, setEditingId] = useState<number | null>(null);
@@ -100,8 +100,6 @@ export default function Settings() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.heading}>Data Biodata</Text>
-
       {biodataList.map((item) => (
         <Card key={item.id} style={styles.card} mode="elevated">
           <Card.Content>
@@ -195,6 +193,8 @@ const styles = StyleSheet.create({
   },
   heading: {
     marginBottom: 20,
+    fontSize: 22,
+    fontWeight: "bold",
     textAlign: "center",
   },
   card: {
